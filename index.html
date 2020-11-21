@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Object Constructors</h2>
+
+<p id="demo"></p>
+
+<script>
+
+function Person(first, last, age, eye, gender) 
+{
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.eyeColor = eye;
+  this.gender = gender;
+}
+
+
+var myFather = new Person("Jose", "Rodriguez", 54, "green", "Male");
+
+
+document.getElementById("demo").innerHTML =
+"My father is a " + myFather.gender + " with " + myFather.age + " years old and  " + myFather.eyeColor + " eyes and his name is " + myFather.firstName + " " + myFather.lastName + ".";
+
+ 
+
+</script>
+
+</body>
+</html>
